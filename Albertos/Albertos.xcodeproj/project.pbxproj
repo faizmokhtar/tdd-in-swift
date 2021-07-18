@@ -20,6 +20,13 @@
 		9CD8A6BF26A2F3DA00AF0FE3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6BE26A2F3DA00AF0FE3 /* MenuItem.swift */; };
 		9CD8A6C126A2F3ED00AF0FE3 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6C026A2F3ED00AF0FE3 /* MenuSection.swift */; };
 		9CD8A6C326A2FB3E00AF0FE3 /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6C226A2FB3E00AF0FE3 /* Collection+Safe.swift */; };
+		9CD8A6C526A4488F00AF0FE3 /* MenuItem+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6C426A4488F00AF0FE3 /* MenuItem+Fixtures.swift */; };
+		9CD8A6C726A449FC00AF0FE3 /* MenuSection+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6C626A449FC00AF0FE3 /* MenuSection+Fixtures.swift */; };
+		9CD8A6C926A4710600AF0FE3 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6C826A4710600AF0FE3 /* MenuRow.swift */; };
+		9CD8A6CC26A471BD00AF0FE3 /* MenuRowViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6CB26A471BD00AF0FE3 /* MenuRowViewModelTests.swift */; };
+		9CD8A6CE26A4725900AF0FE3 /* MenuRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6CD26A4725900AF0FE3 /* MenuRowViewModel.swift */; };
+		9CD8A6D126A4753900AF0FE3 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6D026A4753900AF0FE3 /* MenuListViewModelTests.swift */; };
+		9CD8A6D326A4764F00AF0FE3 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD8A6D226A4764F00AF0FE3 /* MenuListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		9CD8A6BE26A2F3DA00AF0FE3 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		9CD8A6C026A2F3ED00AF0FE3 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		9CD8A6C226A2FB3E00AF0FE3 /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		9CD8A6C426A4488F00AF0FE3 /* MenuItem+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixtures.swift"; sourceTree = "<group>"; };
+		9CD8A6C626A449FC00AF0FE3 /* MenuSection+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixtures.swift"; sourceTree = "<group>"; };
+		9CD8A6C826A4710600AF0FE3 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		9CD8A6CB26A471BD00AF0FE3 /* MenuRowViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowViewModelTests.swift; sourceTree = "<group>"; };
+		9CD8A6CD26A4725900AF0FE3 /* MenuRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowViewModel.swift; sourceTree = "<group>"; };
+		9CD8A6D026A4753900AF0FE3 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
+		9CD8A6D226A4764F00AF0FE3 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +127,8 @@
 				9CD8A68926A2F2AC00AF0FE3 /* AppDelegate.swift */,
 				9CD8A6C226A2FB3E00AF0FE3 /* Collection+Safe.swift */,
 				9CD8A68B26A2F2AC00AF0FE3 /* SceneDelegate.swift */,
-				9CD8A68D26A2F2AC00AF0FE3 /* MenuList.swift */,
+				9CD8A6CF26A4750900AF0FE3 /* MenuList */,
+				9CD8A6CA26A471A800AF0FE3 /* MenuRow */,
 				9CD8A68F26A2F2AF00AF0FE3 /* Assets.xcassets */,
 				9CD8A69426A2F2AF00AF0FE3 /* LaunchScreen.storyboard */,
 				9CD8A69726A2F2AF00AF0FE3 /* Info.plist */,
@@ -134,7 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				9CD8A6A026A2F2AF00AF0FE3 /* AlbertosTests.swift */,
+				9CD8A6C426A4488F00AF0FE3 /* MenuItem+Fixtures.swift */,
 				9CD8A6A226A2F2AF00AF0FE3 /* Info.plist */,
+				9CD8A6C626A449FC00AF0FE3 /* MenuSection+Fixtures.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -157,6 +174,26 @@
 				9CD8A6C026A2F3ED00AF0FE3 /* MenuSection.swift */,
 			);
 			path = MenuGrouping;
+			sourceTree = "<group>";
+		};
+		9CD8A6CA26A471A800AF0FE3 /* MenuRow */ = {
+			isa = PBXGroup;
+			children = (
+				9CD8A6C826A4710600AF0FE3 /* MenuRow.swift */,
+				9CD8A6CD26A4725900AF0FE3 /* MenuRowViewModel.swift */,
+				9CD8A6CB26A471BD00AF0FE3 /* MenuRowViewModelTests.swift */,
+			);
+			path = MenuRow;
+			sourceTree = "<group>";
+		};
+		9CD8A6CF26A4750900AF0FE3 /* MenuList */ = {
+			isa = PBXGroup;
+			children = (
+				9CD8A68D26A2F2AC00AF0FE3 /* MenuList.swift */,
+				9CD8A6D226A4764F00AF0FE3 /* MenuListViewModel.swift */,
+				9CD8A6D026A4753900AF0FE3 /* MenuListViewModelTests.swift */,
+			);
+			path = MenuList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,11 +328,14 @@
 			files = (
 				9CD8A68A26A2F2AC00AF0FE3 /* AppDelegate.swift in Sources */,
 				9CD8A6BD26A2F3BC00AF0FE3 /* MenuGrouping.swift in Sources */,
+				9CD8A6CE26A4725900AF0FE3 /* MenuRowViewModel.swift in Sources */,
 				9CD8A68C26A2F2AC00AF0FE3 /* SceneDelegate.swift in Sources */,
 				9CD8A68E26A2F2AC00AF0FE3 /* MenuList.swift in Sources */,
 				9CD8A6C126A2F3ED00AF0FE3 /* MenuSection.swift in Sources */,
+				9CD8A6C926A4710600AF0FE3 /* MenuRow.swift in Sources */,
 				9CD8A6C326A2FB3E00AF0FE3 /* Collection+Safe.swift in Sources */,
 				9CD8A6BF26A2F3DA00AF0FE3 /* MenuItem.swift in Sources */,
+				9CD8A6D326A4764F00AF0FE3 /* MenuListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD8A6C726A449FC00AF0FE3 /* MenuSection+Fixtures.swift in Sources */,
+				9CD8A6D126A4753900AF0FE3 /* MenuListViewModelTests.swift in Sources */,
 				9CD8A6A126A2F2AF00AF0FE3 /* AlbertosTests.swift in Sources */,
+				9CD8A6C526A4488F00AF0FE3 /* MenuItem+Fixtures.swift in Sources */,
+				9CD8A6CC26A471BD00AF0FE3 /* MenuRowViewModelTests.swift in Sources */,
 				9CD8A6BB26A2F2D500AF0FE3 /* MenuGroupingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

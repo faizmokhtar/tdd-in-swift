@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = MenuList(sections: groupMenuByCategory(menu))
+        let contentView = MenuList(viewModel: .init(menu: menu))
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -62,12 +62,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 
 let menu = [
-    MenuItem(category: "starters", name: "Caprese Salad"),
-    MenuItem(category: "starters", name: "Arancini Balls"),
-    MenuItem(category: "pastas", name: "Penne all'Arrabbiata"),
-    MenuItem(category: "pastas", name: "Spaghetti Carbonara"),
-    MenuItem(category: "drinks", name: "Water"),
-    MenuItem(category: "drinks", name: "Red Wine"),
-    MenuItem(category: "desserts", name: "Tiramisù"),
-    MenuItem(category: "desserts", name: "Crema Catalana"),
+    MenuItem(category: "starters", name: "Caprese Salad", spicy: false, price: 5.0),
+    MenuItem(category: "starters", name: "Arancini Balls", spicy: false, price: 5.0),
+    MenuItem(category: "pastas", name: "Penne all'Arrabbiata", spicy: true, price: 5.0),
+    MenuItem(category: "pastas", name: "Spaghetti Carbonara", spicy: true, price: 5.0),
+    MenuItem(category: "drinks", name: "Water", spicy: false, price: 5.0),
+    MenuItem(category: "drinks", name: "Red Wine", spicy: false, price: 5.0),
+    MenuItem(category: "desserts", name: "Tiramisù", spicy: false, price: 5.0),
+    MenuItem(category: "desserts", name: "Crema Catalana", spicy: false, price: 5.0),
 ]
