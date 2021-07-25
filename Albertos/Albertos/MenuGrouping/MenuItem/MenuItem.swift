@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct MenuItem {
+struct MenuItem: Decodable {
     let category: String
     let name: String
     let spicy: Bool
-    let price: Double
+    let price: Double?
 }
 
 extension MenuItem: Identifiable {
